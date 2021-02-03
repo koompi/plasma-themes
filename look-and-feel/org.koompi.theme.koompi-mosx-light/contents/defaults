@@ -23,3 +23,7 @@ theme=Sierra Breeze Enhanced
 
 [plasmarc][Theme]
 name=McMojave-light
+
+[breezerc][Windeco]
+ButtonStyle=macSierra
+CornerRadius=6
