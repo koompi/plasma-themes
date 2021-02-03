@@ -1,0 +1,25 @@
+[kcminputrc][Mouse]
+cursorTheme=McMojave-cursors
+
+[kdeglobals][General]
+ColorScheme=McMojaveLight
+
+[kdeglobals][Icons]
+Theme=la-capitaine-icon-theme
+
+[kdeglobals][KDE]
+widgetStyle=kvantum
+
+[kwinrc][DesktopSwitcher]
+LayoutName=org.kde.breeze.desktop
+
+[kwinrc][WindowSwitcher]
+LayoutName=thumbnail_grid
+
+[kwinrc][org.kde.kdecoration2]
+ButtonsOnRight=IAX
+library=org.kde.sierrabreezeenhanced
+theme=Sierra Breeze Enhanced
+
+[plasmarc][Theme]
+name=McMojave-light
