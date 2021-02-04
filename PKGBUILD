@@ -1,6 +1,6 @@
 pkgname=koompi-plasma-themes
-pkgver=20210203
-pkgrel=4
+pkgver=20210204
+pkgrel=1
 arch=('any')
 pkgdesc="Custom plasma themes for KOOMPI OS"
 url="https://koompi.com"
