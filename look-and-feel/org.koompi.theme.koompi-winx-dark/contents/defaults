@@ -23,3 +23,6 @@ theme=Fluent
 
 [plasmarc][Theme]
 name=Qogir-dark
+
+[kscreenlockerrc][Greeter][Wallpaper][org.kde.image][General]
+Image=/usr/share/wallpapers/sunset-art-scenery-landscape-uhdpaper.com-4K-8.277.jpg

@@ -26,4 +26,7 @@ name=McMojave
 
 [breezerc][Windeco]
 ButtonStyle=macSierra
-CornerRadius=6
+CornerRadius=8
+
+[kscreenlockerrc][Greeter][Wallpaper][org.kde.image][General]
+Image=/usr/share/wallpapers/abstract-colorful-dispersion-digital-art-uhdpaper.com-4K-4.1950.jpg
