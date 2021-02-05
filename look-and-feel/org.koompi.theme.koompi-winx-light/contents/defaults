@@ -23,6 +23,3 @@ theme=Fluent
 
 [plasmarc][Theme]
 name=Qogir
-
-[kscreenlockerrc][Greeter][Wallpaper][org.kde.image][General]
-Image=/usr/share/wallpapers/night-lake-sky-scenery-nature-uhdpaper.com-4K-8.253.jpg

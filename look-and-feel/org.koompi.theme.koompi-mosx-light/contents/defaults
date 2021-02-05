@@ -27,6 +27,3 @@ name=McMojave-light
 [breezerc][Windeco]
 ButtonStyle=macSierra
 CornerRadius=8
-
-[kscreenlockerrc][Greeter][Wallpaper][org.kde.image][General]
-Image=/usr/share/wallpapers/abstract-purple-pink-digital-art-uhdpaper.com-4K-4.299.jpg

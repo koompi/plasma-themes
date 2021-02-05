@@ -23,6 +23,3 @@ theme=Fluent
 
 [plasmarc][Theme]
 name=Qogir
-
-[kscreenlockerrc][Greeter][Wallpaper][org.kde.image][General]
-Image=/usr/share/wallpapers/abstract-colorful-digital-art-uhdpaper.com-4K-4.300.jpg
