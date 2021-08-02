@@ -1,8 +1,8 @@
 // Remove all existing panels
 
 for (i in panelIds) {
-    panel = panelById(panelIds[i]);
-    panel.remove();
+  panel = panelById(panelIds[i]);
+  panel.remove();
 }
 
 //Create KOOMPI Panel
@@ -21,8 +21,8 @@ var menu = koompi_panel.addWidget("launchpadPlasmaMod");
 menu.currentConfigGroup = ["General"];
 menu.writeConfig("useCustomButtonImage", true);
 menu.writeConfig(
-    "customButtonImage",
-    "file:///usr/share/icons/koompi/koompi-black.svg"
+  "customButtonImage",
+  "file:///usr/share/icons/koompi/koompi-black.svg"
 );
 menu.writeConfig("useCustomSizeGrid", true);
 menu.writeConfig("numberColumns", 9);
@@ -60,16 +60,12 @@ var systrayContainmentId = systray.readConfig("SystrayContainmentId");
 var systrayContainment = desktopById(systrayContainmentId);
 systrayContainment.currentConfigGroup = ["General"];
 systrayContainment.writeConfig(
-    "extraItems",
-    "org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.discovernotifier,org.kde.plasma.diskquota,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.printmanager,org.kde.plasma.battery"
+  "extraItems",
+  "org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.discovernotifier,org.kde.plasma.diskquota,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.printmanager,org.kde.plasma.battery, org.kde.plasma.notifications"
 );
 systrayContainment.writeConfig(
-    "knownItems",
-    "org.kde.plasma.volume,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.discovernotifier,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.plasma.printmanager,org.kde.kdeconnect"
-);
-systrayContainment.writeConfig(
-    "hiddenItems",
-    "org.kde.plasma.clipboard,org.kde.plasma.volume,org.kde.plasma.networkmanagement,org.kde.plasma.battery, org.kde.plasma.notifications"
+  "knownItems",
+  "org.kde.plasma.volume,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.discovernotifier,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.plasma.printmanager,org.kde.kdeconnect"
 );
 
 koompi_panel.addWidget("org.kde.plasma.networkmanagement");
@@ -107,11 +103,11 @@ show_desktop.writeConfig("size", 5);
 
 var Desktops = desktops();
 for (i = 0; i < Desktops.length; i++) {
-    d = Desktops[i];
-    d.wallpaperPlugin = "org.kde.image";
-    d.currentConfigGroup = Array("Wallpaper", "org.kde.image", "General");
-    d.writeConfig(
-        "Image",
-        "file:///usr/share/wallpapers/abstract-purple-pink-digital-art-uhdpaper.com-4K-4.299.jpg"
-    );
+  d = Desktops[i];
+  d.wallpaperPlugin = "org.kde.image";
+  d.currentConfigGroup = Array("Wallpaper", "org.kde.image", "General");
+  d.writeConfig(
+    "Image",
+    "file:///usr/share/wallpapers/abstract-purple-pink-digital-art-uhdpaper.com-4K-4.299.jpg"
+  );
 }
