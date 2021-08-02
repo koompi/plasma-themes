@@ -43,25 +43,27 @@ all_tasks.writeConfig(
   "file:///usr/share/applications/org.kde.dolphin.desktop,file:///usr/share/applications/firefox.desktop,file:///usr/share/applications/org.kde.konsole.desktop"
 );
 
-// Add notification
-var notifications = koompi_panel.addWidget("org.kde.plasma.notifications");
 // Add system tray
 var systray = koompi_panel.addWidget("org.kde.plasma.systemtray");
-// var systrayContainmentId = systray.readConfig("SystrayContainmentId");
-// var systrayContainment = desktopById(systrayContainmentId);
-// systrayContainment.currentConfigGroup = ["General"];
-// systrayContainment.writeConfig(
-//   "extraItems",
-//   "org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.discovernotifier,org.kde.plasma.diskquota,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.printmanager,org.kde.plasma.battery, org.kde.plasma.notifications"
-// );
-// systrayContainment.writeConfig(
-//   "knownItems",
-//   "org.kde.plasma.volume,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.discovernotifier,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.plasma.printmanager,org.kde.kdeconnect"
-// );
-
-// koompi_panel.addWidget("org.kde.plasma.networkmanagement");
-// koompi_panel.addWidget("org.kde.plasma.volume");
-// koompi_panel.addWidget("org.kde.plasma.battery");
+var systrayContainmentId = systray.readConfig("SystrayContainmentId");
+var systrayContainment = desktopById(systrayContainmentId);
+systrayContainment.currentConfigGroup = ["General"];
+systrayContainment.writeConfig(
+  "extraItems",
+  "org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.vault,org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.plasma.nightcolorcontrol,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.kscreen,touchpad,org.kde.plasma.diskquota,org.kde.plasma.katesessions,org.kde.plasma.weather"
+);
+systrayContainment.writeConfig(
+  "hiddenItems",
+  "org.kde.plasma.katesessions,org.kde.plasma.weather,org.kde.plasma.vault,org.kde.plasma.nightcolorcontrol,org.kde.plasma.diskquota,org.kde.plasma.clipboard,touchpad"
+);
+systrayContainment.writeConfig(
+  "knownItems",
+  "org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.vault,org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.plasma.nightcolorcontrol,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.battery"
+);
+systrayContainment.writeConfig(
+  "shownItems",
+  "org.kde.kscreen,org.kde.plasma.volume,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.networkmanagement,org.kde.plasma.notifications"
+);
 
 var space3 = koompi_panel.addWidget("org.kde.plasma.panelspacer");
 space3.currentConfigGroup = ["General"];
