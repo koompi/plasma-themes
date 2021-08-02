@@ -46,21 +46,21 @@ all_tasks.writeConfig(
 // Add system tray
 var notifications = koompi_panel.addWidget("org.kde.plasma.notifications");
 var systray = koompi_panel.addWidget("org.kde.plasma.systemtray");
-var systrayContainmentId = systray.readConfig("SystrayContainmentId");
-var systrayContainment = desktopById(systrayContainmentId);
-systrayContainment.currentConfigGroup = ["General"];
-systrayContainment.writeConfig(
-  "extraItems",
-  "org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.discovernotifier,org.kde.plasma.diskquota,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.printmanager,org.kde.plasma.battery, org.kde.plasma.notifications"
-);
-systrayContainment.writeConfig(
-  "knownItems",
-  "org.kde.plasma.volume,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.discovernotifier,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.plasma.printmanager,org.kde.kdeconnect"
-);
+// var systrayContainmentId = systray.readConfig("SystrayContainmentId");
+// var systrayContainment = desktopById(systrayContainmentId);
+// systrayContainment.currentConfigGroup = ["General"];
+// systrayContainment.writeConfig(
+//   "extraItems",
+//   "org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.discovernotifier,org.kde.plasma.diskquota,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.printmanager,org.kde.plasma.battery, org.kde.plasma.notifications"
+// );
+// systrayContainment.writeConfig(
+//   "knownItems",
+//   "org.kde.plasma.volume,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.discovernotifier,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.plasma.printmanager,org.kde.kdeconnect"
+// );
 
-koompi_panel.addWidget("org.kde.plasma.networkmanagement");
-koompi_panel.addWidget("org.kde.plasma.volume");
-koompi_panel.addWidget("org.kde.plasma.battery");
+// koompi_panel.addWidget("org.kde.plasma.networkmanagement");
+// koompi_panel.addWidget("org.kde.plasma.volume");
+// koompi_panel.addWidget("org.kde.plasma.battery");
 
 var space3 = koompi_panel.addWidget("org.kde.plasma.panelspacer");
 space3.currentConfigGroup = ["General"];
